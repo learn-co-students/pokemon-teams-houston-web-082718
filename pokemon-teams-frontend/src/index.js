@@ -68,7 +68,6 @@ document.addEventListener("click", function(event) {
     //figure out a way for this info to be updated. It's only seen when there's a snapshot of the page at refresh.
     //look at the DOM instead of the database to see how many pokemons are there. you can find parent element.children.length and it will tell you how many are there. Determine what length that should be counting the corret children elements. There are other ways to do it looking at the database info but with what I have it's how I should move forward.
     let pokemonLIs = event.target.parentElement.children[2].childElementCount;
-    debugger;
     if (pokemonLIs < 6) {
       const data = {
         trainer_id: trainerId
